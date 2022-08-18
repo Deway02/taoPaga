@@ -72,10 +72,17 @@
     </section>
     <!-- NAVIGATION SECTION -->
     <section class="container_nav">
-        <nav class="navbar gap-32 navbar-expand-lg navbar-light">
+        <nav class="navbar gap-32 navbar-expand-custom navbar-light">
             <a class="navbar-brand" href="#">
                 <img src="image/paga-logo-with-line.png" alt="">
             </a>
+            <div class="d-lg-none ml-auto">
+                <button class="btnup-outline bugur my-2 my-sm-0" type="submit">Log In</button>
+                <select class="btn shadow-none" name="countries">
+                    <option value="NL">🇳🇬 Nigeria</option>
+                    <option value="DE">🇩🇪 Ethiopia</option>
+                </select>
+            </div>
             <button class="navbar-toggler noborder" type="button" data-toggle="collapse"
                 data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -83,6 +90,14 @@
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="d-lg-none">
+                    <form class="d-lg-none gap-32 form-inline my-2 my-lg-0">
+                        <input class="form-control paboc mr-sm-2" type="search" placeholder="Username"
+                            aria-label="Search">
+                        <button class="btnup-outline bugur my-2 my-sm-0" type="submit">Go</button>
+                    </form>
+                    <p class="pagalor">Not registered? Sign Up</p>
+                </div>
                 <ul class="gap-32 navbar-nav mr-auto">
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -103,15 +118,40 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">Business</a>
                     </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Company
+                        </a>
+                        <div style="width: 20rem;" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <div style="width: 20rem;" class="d-flex">
+                                <div class="col-6">
+                                    <a class="dropdown-item" href="#">About Us</a>
+                                    <a class="dropdown-item" href="#">Careers</a>
+                                    <a class="dropdown-item" href="#">Media Kit</a>
+                                    <a class="dropdown-item" href="#">Pricing</a>
+                                    <a class="dropdown-item" href="#">Terms of Service</a>
+                                </div>
+                                <div class="col-6">
+                                    <p class="nap mb-0 pagalor">Links</p>
+                                    <a class="dropdown-item" href="#">Paga Blog</a>
+                                    <a class="dropdown-item" href="#">Donate.ng</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Developers</a>
+                    </li>
                 </ul>
-                <form class="form-inline my-2 my-lg-0 gap-32">
+                <form class="gap-32 d-none d-lg-block form-inline my-2 my-lg-0">
                     <input class="form-control paboc mr-sm-2" type="search" placeholder="Username" aria-label="Search">
                     <button class="btnup-outline bugur my-2 my-sm-0" type="submit">Log In</button>
                     <button class="btnup my-2 my-sm-0" type="button">Get Started</button>
                 </form>
-                <select class="ml-5 btn shadow-none" name="countries">
-                    <option value="NL">🇳🇬&emsp;Nigeria</option>
-                    <option value="DE">🇩🇪&emsp;Ethiopia</option>
+                <select class="d-none d-lg-block btn shadow-none" name="countries">
+                    <option value="NL">🇳🇬 Nigeria</option>
+                    <option value="DE">🇩🇪 Ethiopia</option>
                 </select>
             </div>
         </nav>
