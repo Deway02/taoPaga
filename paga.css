@@ -1,3 +1,24 @@
+.carousel-indicators .active {
+    background-color: #f7913e;
+}
+
+.alert {
+    margin-bottom: 0px;
+}
+
+body {
+    font-family: 'Cormorant Upright', serif;
+}
+
+.card {
+    border: #f7931e 1px solid;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-top: solid 7px #f7913e;
+}
+
 .nap {
     padding: .25rem 1.5rem;
 }
