@@ -1,3 +1,8 @@
+@media only screen and (min-width: 0px) and (max-width: 380px) {
+    .nawidth {
+        width: 80px;
+    }
+}
 .carousel-indicators .active {
     background-color: #f7913e;
 }
